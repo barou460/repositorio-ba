@@ -1,7 +1,8 @@
 <?php
-require '../vendor/autoload.php';
-
-use Application\Hello;
+$nome = $_GET ['nome'];
+$mensagem = "Boa noite $nome";
+$num1 = 10;
+$num2 = 20;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,6 +13,9 @@ use Application\Hello;
 </head>
 <body>
     <h1>PHP & Mysql</h1>
-    <p><?= Hello::message() ?></p>
+    <p><?= $mensagem ?></p>
+    <h1>teste</h1>
+    <?= $num1 + $num2 ?>
+    <?= $num1 . $num2 ?>
 </body>
 </html>
